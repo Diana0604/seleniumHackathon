@@ -15,11 +15,15 @@ public class entrarPayPal {
 	public static final String paypalUrl = "https://www.paypal.com/"; 
 	public static String email = new String();
 	public static String password = new String(); 
+	public static String user = "Diana"; 
 	
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Cabrera\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\2.25.0\\chromedriver.exe");
-
+        if(user.equals("Diana")) System.setProperty("webdriver.chrome.driver", "C:\\Users\\Cabrera\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\2.25.0\\chromedriver.exe");
+        if(user.equals("Zaira")) System.setProperty("webdriver.chrome.driver", "C:\\Users\\Cabrera\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\2.25.0\\chromedriver.exe");
+        if(user.equals("Cami")) System.setProperty("webdriver.chrome.driver", "C:\\Users\\Cabrera\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\2.25.0\\chromedriver.exe");
+        if(user.equals("Marta")) System.setProperty("webdriver.chrome.driver", "C:\\Users\\Cabrera\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\2.25.0\\chromedriver.exe");
+        
          WebDriver driver = new ChromeDriver(); 
          driver.get(paypalUrl); 
          
